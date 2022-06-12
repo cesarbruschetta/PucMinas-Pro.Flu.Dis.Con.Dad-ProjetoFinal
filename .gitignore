@@ -1,0 +1,13 @@
+.env
+processing-zone
+delivery-zone
+.ipynb
+.ipynb_checkpoints
+.vscode
+# Local .terraform directories
+**/.terraform/*
+
+*_env
+
+
+.DS_Store
