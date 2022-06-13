@@ -1,0 +1,44 @@
+[tool.isort]
+    case_sensitive= '1'
+    use_parentheses = '1'
+    line_length = '79'
+    order_by_type = '1'
+    multi_line_output = '3'
+    include_trailing_comma = '1'
+    lines_after_imports = '2'
+    atomic = '1'
+
+[tool.black]
+    exclude = '''
+        \.pyi
+    '''
+    target-version = ['py38']
+    line-length = '79'
+    skip-string-normalization = '1'
+
+
+[tool.poetry]
+name = "projeto_final_recomentacoes"
+version = "0.1.0"
+description = ""
+authors = ["Cesar Augusto <cesarabruschetta@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyspark = "^3.2.1"
+fastapi = "0.68.0"
+uvicorn = "0.15.0"
+pymongo = "3.12.0"
+numpy = "^1.22.4"
+findspark = "^2.0.1"
+
+[tool.poetry.dev-dependencies]
+isort = "^5.6.4"
+black = "^22.3.0"
+mypy = "^0.960"
+flake8 = "^3.8.4"
+pylint = "^2.8.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
