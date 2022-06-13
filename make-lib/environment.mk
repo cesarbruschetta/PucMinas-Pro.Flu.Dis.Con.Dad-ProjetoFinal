@@ -3,7 +3,6 @@ install-poetry: ## Installs poetry as user
 
 dependencies: ## Installs dev dependencies
 	@poetry install --no-root
-	@poetry run pip install typed-ast --upgrade
 
 shell: ## Open an ipython on poetry
 	@poetry run ipython

@@ -8,6 +8,6 @@ delivery-zone
 **/.terraform/*
 
 *_env
-
+*.pyc
 
 .DS_Store
